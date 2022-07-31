@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+  <div class="banner">
+  <h1>CLIMATE CHANGE</h1> 
+  </div>
+</head>
+
+<body>
+
+    <div>
+    <header>
+      <nav class="menu">
+        <div class="toggler"></div>
+        <div class="toggler"></div>
+        <div class="toggler"></div>
+      </nav>
+    </header>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About/Causes</a>
+        </li>
+        <li>
+          <a href="effects.html">Effects</a>
+        </li>
+        <li>
+          <a href="quiz.html">Quiz</a>
+        </li>
+        <li>
+          <a href="solutions.html">Solutions</a>
+        </li>
+        <li>
+          <a href="contacts.html">Helpful Links</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <section>
+    <h2>Welcome to my Climate Change Website!</h2>
+    <p>Hello all, and welcome to my climate change website! In this website, I will be teaching you all about climate change and how it affects our modern world. You will learn what it is, how it's caused and the kinds of solutions we can bring to it. There will also be a page containing charities and other organisations which you can contact if you'd like to help them in their strive to put an end to climate change. So what are you waiting for? Start reading!</p>
+  </section>
+  
+</body>
+<script>
+    (function () {
+    var togglers = document.querySelectorAll('.toggler'),
+      icon = document.querySelector('.menu'),
+      navbars = document.querySelector('.navbar');
+
+    function tranformFormat() {
+      togglers[0].classList.toggle('animation0');
+      togglers[1].classList.toggle('hide');
+      togglers[2].classList.toggle('animation2');
+      navbars.classList.toggle('show');
+    }
+    icon.addEventListener('click', tranformFormat);
+  })();
+</script>
+
+</body>
+</html>
