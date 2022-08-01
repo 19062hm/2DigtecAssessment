@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: url("img_a3.jpg");
+  background: url("images/img_a3.jpg");
   background-size: 100% 100vh;
 }
 
@@ -69,6 +69,7 @@ ul li {
   transition: visibility 0s ease-in-out 
   4s,opacity 4s ease-in-out;
   text-align: center;
+  z-index: 2;
 }
 
 .navbar.show {
@@ -113,7 +114,6 @@ section {
   padding: 12px;
   border-radius: 8px;
   position: relative; top:240px;
-  z-index: -1;
 }
 
 h2 {
@@ -127,6 +127,7 @@ p {
   text-align: center;
   color: white;
   text-decoration: none;
+  z-index: 1;
 }
 
 section ul li a {
@@ -134,6 +135,7 @@ section ul li a {
   pointer-events: auto;
   color: white;
   text-decoration: none;
+  z-index: 2;
 }
 
 section ul li a:hover {
