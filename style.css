@@ -1,10 +1,16 @@
 body {
   font-family: 'Righteous', cursive;
-  text-align: center;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background: url("images/img_a3.jpg");
+  overflow: hidden; 
+  background-color: #87CEEB;
+  background-size: 100% 100vh;
+}
+
+.pages {
+  margin: 0;
+  padding: 0;
+  background: url("images/0x0.jpg");
   background-size: 100% 100vh;
 }
 
@@ -135,6 +141,8 @@ section ul li a {
   pointer-events: auto;
   color: white;
   text-decoration: none;
+  text-align: center;
+  font-size: 16px;
   z-index: 2;
 }
 
@@ -172,7 +180,7 @@ section ul li a:hover {
 }
 
 @media only screen and (max-width: 360px) {
-
+  
 .menu {
   height: 24px;
   width: 30px;
@@ -212,7 +220,6 @@ p {
 
 section ul li a {
   font-size: 12px;
-  text-align: center;
 }
   
 }
