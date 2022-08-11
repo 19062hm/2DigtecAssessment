@@ -207,6 +207,20 @@ section ul li a:hover {
   transition: 0.1s ease-in-out;
 }
 
+shape_one {
+  clip-path: polygon(24% 100%, 0 0, 0 100%);
+}
+
+.about {
+  opacity: 1;
+  transition: 2.5s ease-in-out;
+}
+
+.section_animate {
+  opacity: 0;
+  transition: 2.5s ease-in-out;
+}
+
 @media only screen and (max-width: 1360px) {
 
 .banner {
