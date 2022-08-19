@@ -207,10 +207,6 @@ section ul li a:hover {
   transition: 0.1s ease-in-out;
 }
 
-shape_one {
-  clip-path: polygon(24% 100%, 0 0, 0 100%);
-}
-
 .about {
   opacity: 1;
   transition: 2.5s ease-in-out;
@@ -221,75 +217,130 @@ shape_one {
   transition: 2.5s ease-in-out;
 }
 
-@media only screen and (max-width: 1360px) {
-
-.banner {
-  font-size: 3em;
-  top: -7.25%;
-  left: 13.2%;
-}
-  
+.treetop, .treetop2, .treetop3, .treetop4 {
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #337033;
 }
 
-@media only screen and (max-width: 1145px) {
-
-.banner {
-  font-size: 2em;
-  top: 5.4%;
-  left: 20.6%;
-}
-  
+.tree-middle, .tree-middle2, .tree-middle3, .tree-middle4 {
+  width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 60px solid #337033;
 }
 
-@media only screen and (max-width: 835px) {
-
-.banner {
-  font-size: 1em;
+.tree-bottom, .tree-bottom2, .tree-bottom3, .tree-bottom4 {
+  width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 70px solid #337033;
 }
-  
-}
 
-@media only screen and (max-width: 360px) {
-  
-.menu {
-  height: 24px;
+.treetrunk, .treetrunk2, .treetrunk3, .treetrunk4 {
   width: 30px;
+  height: 30px;
+  background-color: #7e673e
 }
 
-.toggler {
-  height: 2px;
-}
-  
-.banner {
-  font-size: 1.1em;
-  top: 3%;
-  left: -1%;
+.treetop {
+  position: relative; top: 300px; left: 1040px;
 }
 
-.animation0 {
-  transform: rotate(45deg) translateY(12.5px);
-  transition: 0.3s ease-in-out;
+.tree-middle {
+  position: relative; top: 300px; left: 1035px;
 }
 
-.animation2 {
-  transform: rotate(-45deg) translateY(-12.5px);
-  transition: 0.3s ease-in-out;
-}
-  
-section {
-  position: relative; top: 150px;
+.tree-bottom {
+  position: relative; top: 300px; left: 1030px;
 }
 
-h2 {
-  font-size: 16px;
+.treetrunk {
+  position: relative; top: 300.2px; left: 1049px;
 }
 
-p {
-  font-size: 12px;
+.treetop2 {
+  position: relative; top: 90px; left: 780px;
 }
 
-section ul li a {
-  font-size: 12px;
+.tree-middle2 {
+  position: relative; top: 90px; left: 775px;
 }
-  
+
+.tree-bottom2 {
+  position: relative; top: 90px; left: 770px;
+}
+
+.treetrunk2 {
+  position: relative; top: 90.2px; left: 790px;
+}
+
+.treetop3 {
+  position: relative; top: -119.3px; left: 520px;
+}
+
+.tree-middle3 {
+  position: relative; top: -119.3px; left: 515px;
+}
+
+.tree-bottom3 {
+  position: relative; top: -119.3px; left: 510px;
+}
+
+.treetrunk3 {
+  position: relative; top: -119.5px; left: 530px;
+}
+
+.treetop4 {
+  position: relative; top: -329.3px; left: 260px;
+}
+
+.tree-middle4 {
+  position: relative; top: -329.3px; left: 255px;
+}
+
+.tree-bottom4 {
+  position: relative; top: -329.3px; left: 250px;
+}
+
+.treetrunk4 {
+  position: relative; top: -329.3px; left: 270px;
+}
+
+.treetop, .treetop2, .treetop3, .treetop4 {
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #337033;
+  position: relative; top: 10000px; left: 10000px;
+}
+
+.tree-middle, .tree-middle2, .tree-middle3, .tree-middle4 {
+  width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 60px solid #337033;
+  position: relative; top: 10000px; left: 10000px;
+}
+
+.tree-bottom, .tree-bottom2, .tree-bottom3, .tree-bottom4 {
+  width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 70px solid #337033;
+  position: relative; top: 10000px; left: 10000px;
+}
+
+.treetrunks, .treetrunks2, .treetrunks3, .treetrunks4 {
+  width: 30px;
+  height: 30px;
+  position: relative; top: 10000px; left: 10000px;
+  background-color: #7e673e;
 }

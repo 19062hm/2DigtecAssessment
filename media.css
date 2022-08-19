@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1360px) {
+
+.banner {
+  font-size: 3em;
+  top: -7.25%;
+  left: 13.2%;
+}
+  
+}
+
+@media only screen and (max-width: 1145px) {
+
+.banner {
+  font-size: 2em;
+  top: 5.4%;
+  left: 20.6%;
+}
+  
+}
+
+@media only screen and (max-width: 835px) {
+
+.banner {
+  font-size: 1em;
+}
+  
+}
+
+@media only screen and (max-width: 360px) {
+  
+.menu {
+  height: 24px;
+  width: 30px;
+}
+
+.toggler {
+  height: 2px;
+}
+  
+.banner {
+  font-size: 1.1em;
+  top: 3%;
+  left: -1%;
+}
+
+.animation0 {
+  transform: rotate(45deg) translateY(12.5px);
+  transition: 0.3s ease-in-out;
+}
+
+.animation2 {
+  transform: rotate(-45deg) translateY(-12.5px);
+  transition: 0.3s ease-in-out;
+}
+  
+section {
+  position: relative; top: 150px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 12px;
+}
+
+section ul li a {
+  font-size: 12px;
+}
+  
+}
