@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,11 +13,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 
-<body class="pages">
+<body>
 
-  <div class="banner">
+<div class="banner">
   <h1>CLIMATE CHANGE</h1> 
-  </div>
+</div>
 
     <div>
     <header>
@@ -51,12 +51,40 @@
     </div>
   </div>
 
-  <section>
+  <button class="arrow_toggle_one">
+    <span class="arrow_previous"></span>
+  </button>
+
+  <button class="arrow_toggle_two">
+    <span class="arrow_next"></span>
+  </button>
+  
+  <section class="solution">
     <h2>Solutions</h2>
     <p>You may not know this, but there are little things you can do every day can help make a difference against the effects of climate change on the planet. Things such as changing how you use energy, reducing water waste, and lowering the amount of food you waste can all help to reduce <em>your</em> impact on climate change. <br></br> The United Nations states that "Climate Change is the defining issue of our time and we are at a defining moment." This means that if we do not act now, our planet will continue its path down the road of destruction, and we may all end up extinct because of it. So I encourage you to please, act now, and maybe you can help be a part of the solution and secure our future for centuries to come.</p>
   </section>
+
+  <div class="trees">  
+  <div class="treetop"></div>
+  <div class="tree-middle"></div>
+  <div class="tree-bottom"></div>
+  <div class="treetrunk"></div>
+  <div class="treetop2"></div>
+  <div class="tree-middle2"></div>
+  <div class="tree-bottom2"></div>
+  <div class="treetrunk2"></div>
+  <div class="treetop3"></div>
+  <div class="tree-middle3"></div>
+  <div class="tree-bottom3"></div>
+  <div class="treetrunk3"></div>
+  <div class="treetop4"></div>
+  <div class="tree-middle4"></div>
+  <div class="tree-bottom4"></div>
+  <div class="treetrunk4"></div>
+  </div>
+
+<section class="tree_info"></section>
   
-</body>
 <script>
     (function () {
     var togglers = document.querySelectorAll('.toggler'),
@@ -73,5 +101,26 @@
   })();
 </script>
 
+<script>
+    let myObject = document.querySelector('.solution'),
+    btn1 = document.querySelector('.arrow_toggle_two'),
+    btn2 = document.querySelector('.arrow_toggle_one'),
+    ani = document.querySelector('.trees');
+
+btn1.addEventListener('click', function () {
+  myObject.classList.add('section_animate');
+  ani.classList.add('tree_animate');
+  this.disabled = true;
+  btn2.disabled = false;
+}, false);
+
+btn2.addEventListener('click', function () {
+  myObject.classList.remove('section_animate');
+  ani.classList.remove('tree_animate');
+  this.disabled = true;
+  btn1.disabled = false;
+}, false);
+</script>
+  
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -11,14 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-<script src="animation.js"></script>
-  <div class="banner">
-  <h1>CLIMATE CHANGE</h1> 
-  </div>
 </head>
+  
+<body class="pages">
 
-<body>
-
+<div class="banner">
+  <h1>CLIMATE CHANGE</h1> 
+</div>
+  
     <div>
     <header>
       <nav class="menu">
@@ -50,37 +50,14 @@
       </ul>
     </div>
   </div>
-
-  <button class="arrow_toggle_one">
-    <span class="arrow_previous"></span>
-  </button>
-
-  <button class="arrow_toggle_two">
-    <span class="arrow_next"></span>
-  </button>
   
-  <section class="about">
+  <section>
     <h2>About Climate Change</h2>
-    <p>I'm sure you've all heard of climate change before, but what exactly is it? Well, climate change is when there are long-term shifts in temperatures and weather patterns. This then increases flooding, drroughts and other natural disasters. <br></br> Now you may be asking yourself, what actually causes climate change? Well actually, climate change used to be caused naturally overtime. However, since the 1800s, human activities have been the driving force behind climate change. This is mainly due to the burning of fossil fuels such as coal, oil and gas, which produce heat-trapping gases and releases them into the atmosphere. This then damages the ozone layer (an invisible layer between the Earth and space which protects us from the worst of the sun's rays) creating holes in the layer and increasing the amount of UV ray effects hitting our planet.</p>
+    <p>I'm sure you've all heard of climate change before, but what exactly is it? Well, climate change is when there are long-term shifts in temperatures and weather patterns. This then increases flooding, drroughts and other natural disasters. <br><br> Now you may be asking yourself, what actually causes climate change? Well actually, climate change used to be caused naturally overtime. However, since the 1800s, human activities have been the driving force behind climate change. This is mainly due to the burning of fossil fuels such as coal, oil and gas, which produce heat-trapping gases and releases them into the atmosphere. This then damages the ozone layer (an invisible layer between the Earth and space which protects us from the worst of the sun's rays) creating holes in the layer and increasing the amount of UV ray effects hitting our planet.</p>
+    <img src="/images/Factory.jpeg" alt="A working factory with smoke coming out of one of the three chimneys at the top">
+
   </section>
 
-  <div class="treetops"></div>
-  <div class="tree-middles"></div>
-  <div class="tree-bottoms"></div>
-  <div class="treetrunks"></div>
-  <div class="treetops2"></div>
-  <div class="tree-middles2"></div>
-  <div class="tree-bottoms2"></div>
-  <div class="treetrunks2"></div>
-  <div class="treetops3"></div>
-  <div class="tree-middles3"></div>
-  <div class="tree-bottoms3"></div>
-  <div class="treetrunks3"></div>
-  <div class="treetops4"></div>
-  <div class="tree-middles4"></div>
-  <div class="tree-bottoms4"></div>
-  <div class="treetrunks4"></div>
-</body>
 <script>
     (function () {
     var togglers = document.querySelectorAll('.toggler'),
@@ -95,24 +72,6 @@
     }
     icon.addEventListener('click', tranformFormat);
   })();
-</script>
-
-<script>
-    let myObject = document.querySelector('.about'),
-    btn1 = document.querySelector('.arrow_toggle_two'),
-    btn2 = document.querySelector('.arrow_toggle_one');
-
-btn1.addEventListener('click', function () {
-  myObject.classList.add('section_animate');
-  this.disabled = true;
-  btn2.disabled = false;
-}, false);
-
-btn2.addEventListener('click', function () {
-  myObject.classList.remove('section_animate');
-  this.disabled = true;
-  btn1.disabled = false;
-}, false);
 </script>
   
 </body>

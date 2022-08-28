@@ -1,3 +1,71 @@
+@media only screen and (max-width: 1920px) {
+
+.tree_animate .treetop {
+  position: relative; top: -100px; left: 1065px;
+}
+  
+.tree_animate .tree-middle {
+  position: relative; top: -100px; left: 1060px;
+}
+
+.tree_animate .tree-bottom {
+  position: relative; top: -100px; left: 1055px;
+}
+
+.tree_animate .treetrunk {
+  position: relative; top: -100px; left: 1075px;
+}
+
+.tree_animate .treetop2 {
+  position: relative; top: -312px; left: 765px;
+}
+
+.tree_animate .tree-middle2 {
+  position: relative; top: -312px; left: 760px;
+}
+
+.tree_animate .tree-bottom2 {
+  position: relative; top: -312px; left: 755px;
+}
+
+.tree_animate .treetrunk2 {
+  position: relative; top: -312px; left: 775px;
+}
+
+.tree_animate .treetop3 {
+  position: relative; top: -520px; left: 465px;
+}
+
+.tree_animate .tree-middle3 {
+  position: relative; top: -520px; left: 460px;
+}
+
+.tree_animate .tree-bottom3 {
+  position: relative; top: -520px; left: 455px;
+}
+
+.tree_animate .treetrunk3 {
+  position: relative; top: -520px; left: 475px;
+}
+
+.tree_animate .treetop4 {
+  position: relative; top: -730px; left: 165px;
+}
+
+.tree_animate .tree-middle4 {
+  position: relative; top: -730px; left: 160px;
+}
+
+.tree_animate .tree-bottom4 {
+  position: relative; top: -730px; left: 155px;
+}
+  
+.tree_animate .treetrunk4 {
+  position: relative; top: -730px; left: 175px;
+}
+  
+}
+
 @media only screen and (max-width: 1360px) {
 
 .banner {
@@ -67,6 +135,10 @@ p {
 
 section ul li a {
   font-size: 12px;
+}
+
+.links {
+  left: 20%;
 }
   
 }
