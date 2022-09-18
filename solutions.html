@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="media.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/media.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -83,7 +83,7 @@
   <div class="treetrunk4"></div>
   </div>
 
-<section class="tree_info"></section>
+<section class="tree_info"><p>As people have surely told you, one way to be a part of the solution is to plant more trees. Doing so will reduce the amount of greenhouse gases in our atmosphere, as trees will absorb carbon dioxide (one of the biggest problems currently is the amount of it trapped in our atmosphere). So I encourage you to get some seeds, put on your gloves and start planting!</p></section>
   
 <script>
     (function () {
@@ -105,11 +105,13 @@
     let myObject = document.querySelector('.solution'),
     btn1 = document.querySelector('.arrow_toggle_two'),
     btn2 = document.querySelector('.arrow_toggle_one'),
-    ani = document.querySelector('.trees');
+    ani = document.querySelector('.trees'),
+    sec = document.querySelector('.tree_info');
 
 btn1.addEventListener('click', function () {
   myObject.classList.add('section_animate');
   ani.classList.add('tree_animate');
+  sec.classList.add('info_animate');
   this.disabled = true;
   btn2.disabled = false;
 }, false);
@@ -117,6 +119,7 @@ btn1.addEventListener('click', function () {
 btn2.addEventListener('click', function () {
   myObject.classList.remove('section_animate');
   ani.classList.remove('tree_animate');
+  sec.classList.remove('info_animate');
   this.disabled = true;
   btn1.disabled = false;
 }, false);

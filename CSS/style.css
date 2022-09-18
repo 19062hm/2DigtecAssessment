@@ -2,7 +2,7 @@ body {
   font-family: 'Righteous', cursive;
   margin: 0;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #87CEEB;
   background-size: 100% 100vh;
 }
@@ -10,7 +10,7 @@ body {
 .pages {
   margin: 0;
   padding: 0;
-  background: url("images/backgroundImage.jpeg");
+  background: url("../images/backgroundImage.jpg");
   background-size: 100% 100vh;
 }
 
@@ -175,18 +175,17 @@ a:hover {
 
 .arrow_toggle_one {
   display: block;
-  position: relative; top: 100px;
+  position: relative; top: 400px; left: 80px;
   background-color: #3d3d3d;
   width: 45px; 
   height: 45px; 
   border-radius: 50%;
   border: none;
-  top: -100%;
 }
 
 .arrow_toggle_two {
   display: block;
-  position: relative;
+  position: relative; top: 355px; left: 1300px;
   background-color: #3d3d3d;
   width: 45px; 
   height: 45px; 
@@ -229,6 +228,24 @@ a:hover {
 .section_animate {
   opacity: 0;
   transition: 2.5s ease-in-out;
+}
+
+.tree_info {
+  width: 40%;
+  display: block;
+  text-align: center;
+  position: relative; top:340px;
+  transition: 1s ease-in-out;
+}
+
+.tree_info p {
+  font-size: 12px;
+}
+
+.info_animate {
+  position: relative; top:-525px;
+  transition: 1s ease-in-out;
+  transition-delay: 4.5s;
 }
 
 .treetop, .treetop2, .treetop3, .treetop4 {
@@ -275,35 +292,35 @@ a:hover {
 }
 
 .tree_animate .treetop {
-  position: relative; top: -100px; left: 1065px;
+  position: relative; top: 100px; left: 1165px;
 }
   
 .tree_animate .tree-middle {
-  position: relative; top: -100px; left: 1060px;
+  position: relative; top: 100px; left: 1160px;
 }
 
 .tree_animate .tree-bottom {
-  position: relative; top: -100px; left: 1055px;
+  position: relative; top: 100px; left: 1155px;
 }
 
 .tree_animate .treetrunk {
-  position: relative; top: -100px; left: 1075px;
+  position: relative; top: 100px; left: 1175px;
 }
 
 .tree_animate .treetop2 {
-  position: relative; top: -312px; left: 765px;
+  position: relative; top: -212px; left: 865px;
 }
 
 .tree_animate .tree-middle2 {
-  position: relative; top: -312px; left: 760px;
+  position: relative; top: -212px; left: 860px;
 }
 
 .tree_animate .tree-bottom2 {
-  position: relative; top: -312px; left: 755px;
+  position: relative; top: -212px; left: 855px;
 }
 
 .tree_animate .treetrunk2 {
-  position: relative; top: -312px; left: 775px;
+  position: relative; top: -212px; left: 875px;
 }
 
 .tree_animate .treetop3 {

@@ -1,5 +1,9 @@
 @media only screen and (max-width: 1920px) {
-
+  
+.section {
+  position: relative; top: 150px;
+}
+  
 .tree_animate .treetop {
   position: relative; top: -100px; left: 1065px;
 }
