@@ -54,11 +54,48 @@ opacity: 1;
 /* Order Code */
 
 .oak {
-  max-width: 50%;
-  max-height: auto;
   opacity: 0;
+  width: 40%;
+  height: auto;
+  position: relative; top: -50px; left: 50px;
 }
 
 .oak_animate {
+  opacity: 1;
+}
+
+.oaktree {
+  color: #87CEEB;
+  background-image: none;
+  position: relative; top: -50px; left: -550px;
+  width: 30%;
+  opacity: 0;
+}
+
+.oaktree_animate {
+  opacity: 1;
+}
+
+.oak_tree {
+  color: green;
+  position: relative; top: -60px; left: 50px;
+}
+
+.oakQuantity {
+  opacity: 0;
+  position: relative; top: -120px; left: 70px;
+  width: 10%;
+}
+
+.oakQuantity_animate {
+  opacity: 1;
+}
+
+.oakButton {
+  opacity: 0;
+  position: relative; top: -80px; left: -25px;
+}
+
+.oakButton_animate {
   opacity: 1;
 }

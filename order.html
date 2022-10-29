@@ -25,7 +25,11 @@
 <button class="nameButton" onclick="nameFunction()">Enter</button>
 <p id="user"></p>
 
-<img class="oak" src="oaktree.jpg">
+<section class="oaktree">
+<input type="image" class="oak" src="images/oaktree.jpg" onclick="oakClick();"> <p class="oak_tree">Oak Tree: $8.50</p>
+</section>
+<input type="text" class="oakQuantity">
+<button class="oakButton" onclick="oakFunction()">Enter</button>
   
 <script>
     let welcoming = document.querySelector('.welcome'),
@@ -33,20 +37,36 @@
     naming = document.querySelector('.nameButton'),
     user = document.getElementById("user"),
     banner = document.querySelector('.banner'),
-    oak = document.querySelector('.oak');
+    oak = document.querySelector('.oak'),
+    oaktree = document.querySelector('.oaktree');
 
 function nameFunction() {
-var name = document.querySelector(".name").value;
-welcoming.classList.add('welcome_animate');
-naming.classList.add('nameButton_animate');
-banner.classList.add('banner_animate');
-username.classList.add('name_animate');
-oak.classList.add('oak_animate');
-document.getElementById("user").innerHTML = name + "'s Order";
-document.querySelector("name").value = '';
-naming.disabled = true;
-username.disabled = true;
+    var name = document.querySelector(".name").value;
+    welcoming.classList.add('welcome_animate');
+    naming.classList.add('nameButton_animate');
+    banner.classList.add('banner_animate');
+    username.classList.add('name_animate');
+    oak.classList.add('oak_animate');
+    oaktree.classList.add('oaktree_animate');
+    document.getElementById("user").innerHTML = name + "'s Order";
+    document.querySelector("name").value = '';
+    naming.disabled = true;
+    username.disabled = true;
 }
+
+function oakFunction() {
+
+}
+</script>
+
+<script>
+    let oakquantity = document.querySelector('.oakQuantity'),
+    oakbutton = document.querySelector('.oakButton');
+
+function oakClick() {
+    oakquantity.classList.add('oakQuantity_animate');
+    oakbutton.classList.add('oakButton_animate');
+};
 </script>
 
 </body>
