@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/media.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/program.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+<div class="banner">
+  <h1>CLIMATE CHANGE</h1>
+</div>
+  
+<h2 class="welcome">Welcome! What is your name?</h2>
+<input type="text" class="name">
+<button class="nameButton" onclick="nameFunction()">Enter</button>
+<p id="user"></p>
+
+<img class="oak" src="oaktree.jpg">
+  
+<script>
+    let welcoming = document.querySelector('.welcome'),
+    username = document.querySelector(".name"),
+    naming = document.querySelector('.nameButton'),
+    user = document.getElementById("user"),
+    banner = document.querySelector('.banner'),
+    oak = document.querySelector('.oak');
+
+function nameFunction() {
+var name = document.querySelector(".name").value;
+welcoming.classList.add('welcome_animate');
+naming.classList.add('nameButton_animate');
+banner.classList.add('banner_animate');
+username.classList.add('name_animate');
+oak.classList.add('oak_animate');
+document.getElementById("user").innerHTML = name + "'s Order";
+document.querySelector("name").value = '';
+naming.disabled = true;
+username.disabled = true;
+}
+</script>
+
+</body>
+</html>
