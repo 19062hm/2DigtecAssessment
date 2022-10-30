@@ -388,3 +388,24 @@ a:hover {
   position: relative; top: -730px; left: 175px;
   opacity: 1;
 }
+
+/* Button Code */
+
+#button {
+  width: 400px;
+  margin: auto;
+  position: relative; top: 240px; left: 80px;
+}
+
+.myButton {
+background:    #54923a;
+border:        1px solid #556699;
+border-radius: 11px;
+box-shadow:    0 1px #444444;
+padding:       20px 45px;
+color:         #ffffff;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+text-decoration: none;
+opacity: 1;
+}
