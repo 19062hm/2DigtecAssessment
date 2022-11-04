@@ -409,3 +409,9 @@ text-align:    center;
 text-decoration: none;
 opacity: 1;
 }
+
+.myButton:hover {
+  color: #54923a;
+  text-decoration: none;
+  background: #ffffff;
+}
