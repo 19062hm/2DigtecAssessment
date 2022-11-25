@@ -14,18 +14,20 @@ if (ordering.toLowerCase() != "y") {
 /* Order Code */
 
 function orderFunction() {
-  if (menu.toLowerCase() != "o" && menu.toLowerCase() != "b" && menu.toLowerCase() != "p" && menu.toLowerCase() != "s" && menu.toLowerCase() != "k" && menu.toLowerCase() != "e" && menu.toLowerCase() != "w" && menu.toLowerCase() != "bon" && menu.toLowerCase() != "acer" && menu.toLowerCase() != "pong" && menu.toLowerCase() != "rain" && menu.toLowerCase() != "kaka") {
+  while (menu.toLowerCase() != "o" && menu.toLowerCase() != "b" && menu.toLowerCase() != "p" && menu.toLowerCase() != "s" && menu.toLowerCase() != "k" && menu.toLowerCase() != "e" && menu.toLowerCase() != "w" && menu.toLowerCase() != "bon" && menu.toLowerCase() != "acer" && menu.toLowerCase() != "pong" && menu.toLowerCase() != "rain" && menu.toLowerCase() != "kaka") {
     alert("Invalid option chosen, you can only choose from the selection on the tree menu. Please try again");
     menu = prompt("What would you like to order? Type O for Oak, B for Birch, P for Pine, S for Spruce, K for King Palm, E for Elm, W for Willow, Bon for Bonsai, Acer for Acer Palmatum, Pong for Ponga, Rain for Rainbow Eucalyptus or Kaka for Kakabeak");
   } 
 }
 
 while (ordering.toLowerCase() == "y") {
+  var menu = "boop";
+  var again = "beep";
+  var phone = '';
+  var totalTrees = 0;
   var cost = 0;
   var costOne = 0;
   var costTwo = 0;
-  var menu = "boop";
-  var again = "beep";
   var oak = 0;
   var birch = 0;
   var pine = 0;
@@ -265,20 +267,42 @@ while (ordering.toLowerCase() == "y") {
   costOne = stanFunction(stanTrees, 8.5);
   costTwo = exoFunction(exoTrees, 13.5);
   cost = costOne + costTwo;
+  totalTrees = Number(stanTrees) + Number(exoTrees);
+
+  function phoneFunction() {
+    while (isNaN(phone)) {
+      alert("Sorry, you can only enter numbers when typing your phone number. Please try again");
+      phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
+    } if (phone.length < 8) {
+      alert("Sorry, but a phone number needs to be at least 8 digits long. Please try again");
+      phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
+      phoneFunction(phone);
+    } else if (phone.length > 10) {
+      alert("Sorry, a phone number can only be up to 10 digits long, please try again");
+      phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
+      phoneFunction(phone);
+    } else if (phone.length == 8) {
+      phone = phone.charAt(0) + phone.charAt(1) + '-' + phone.charAt(2) + phone.charAt(3) + phone.charAt(4) + '-' + phone.charAt(5) + phone.charAt(6) + phone.charAt(7);
+    } else {
+       phone = phone.charAt(0) + phone.charAt(1) + phone.charAt(2) + '-' + phone.charAt(3) + phone.charAt(4) + phone.charAt(5) + '-' + phone.charAt(6) + phone.charAt(7) + phone.charAt(8) + phone.charAt(9);
+    }
+  }
 
   if (again.toLowerCase() != "y") {
     var type = prompt("How would you like to take your order? \nPick Up (type p) \nDelivery (type d)");
   if (type.toLowerCase() == "p") {
     var phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
+    phoneFunction(phone);
     order.sort();
-    alert("Your order is:" + order + "\nPhone: " + phone + "\nTotal Cost: $" + cost);
+    alert("Your order is: " + order + "\nPhone: " + phone + "\nTotal Trees: " + totalTrees + "\nTotal Cost: $" + cost);
     var confirm = prompt("Type y to confirm your order or any other key to cancel");
   } else if (type.toLowerCase() == "d") {
     var address = prompt("Please enter your address so we can deliver it straight to you");
     phone = prompt("Please enter your phone number here so we can ring you when your order's ready and on its way");
+    phoneFunction(phone);
     cost = cost + 3;
     order.sort();
-    alert("Your order is: \n" + order + "\nPhone: " + phone + "\nAddress: " + address + "\nTotal Cost: $" + cost);
+    alert("Your order is: " + order + "\nPhone: " + phone + "\nAddress: " + address + "\nTotal Trees: " + totalTrees + "\nTotal Cost: $" + cost);
     confirm = prompt("Type y to confirm your order or any other key to cancel it");
 } else {
     alert("Sorry, that is an invalid option, please try again");
@@ -288,7 +312,7 @@ while (ordering.toLowerCase() == "y") {
 } if (confirm.toLowerCase() == "y") {
     alert("Order confirmed");
 }
-  var ordering = prompt("Type y if you'd like to place another order");
+  var ordering = prompt("Type y if you'd like to place another order or any other key to exit");
   }
 }
 
