@@ -291,7 +291,7 @@ while (ordering.toLowerCase() == "y") {
   if (again.toLowerCase() != "y") {
     var type = prompt("How would you like to take your order? \nPick Up (type p) \nDelivery (type d)");
   if (type.toLowerCase() == "p") {
-    var phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
+    phone = prompt("Please enter your phone number here so we can ring you when your order's ready");
     phoneFunction(phone);
     order.sort();
     alert("Your order is: " + order + "\nPhone: " + phone + "\nTotal Trees: " + totalTrees + "\nTotal Cost: $" + cost);

@@ -137,7 +137,7 @@ h2 {
   text-align: center;
   color: white;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 p {
@@ -183,6 +183,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.trolley {
+  height: 15%;
+  width: 15%;
+}
+
 /* Solutions.html Animation Code */
 
 .arrow_toggle_one {
@@ -193,6 +198,7 @@ a:hover {
   height: 45px; 
   border-radius: 50%;
   border: none;
+  opacity: 1;
 }
 
 .arrow_toggle_two {
